@@ -1,0 +1,24 @@
+{
+  "name": "mikesfiberglass",
+  "version": "1.0.0",
+  "description": "Mikes Fiberglass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoRb1n/MikesFiberglass.git"
+  },
+  "author": "Corbin Boonzaier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoRb1n/MikesFiberglass/issues"
+  },
+  "homepage": "https://github.com/CoRb1n/MikesFiberglass#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.10",
+    "tailwindcss": "^2.0.1"
+  }
+}
