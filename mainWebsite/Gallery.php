@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href="assets/css/tailwind.css" rel="stylesheet" />
+        <link rel="shortcut icon" href="assets/img/favicon2.png" type="image/x-icon" />
+        <script src="./assets/js/gallery.js"></script>
+        <title>Gallery Mikes Fiberglass</title>
+        <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 640px) {
+            .gallery {
+                grid-template-columns: repeat(2, auto);
+            }
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            cursor: pointer;
+
+            object-fit: cover;
+        }
+
+        .gallery img:fullscreen {
+            object-fit: contain;
+        }
+
+        .gallery figure {
+            margin: 0;
+        }
+
+        .gallery figcaption {
+            padding: 5px;
+            background: #3e3e3e;
+            color: #fff;
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        </style>
+    </head>
+
+    <body class="bg-green font-serif">
+        <header class="flex flex-wrap items-center justify-between px-12 h-32 -mb-32 relative">
+            <ul class="order-last md:order-first flex-1 flex justify-center md:justify-start list-reset">
+                <li>
+                    <a href="index.html" class="text-sm text-grey-darker no-underline hover:text-black">Home</a>
+                </li>
+                <li class="ml-8">
+                    <a href="AboutUs.html" class="text-sm text-grey-darker no-underline hover:text-black">About</a>
+                </li>
+                <li class="ml-8">
+                    <a href="ContactUs.html" class="text-sm text-grey-darker no-underline hover:text-black">Contact</a>
+                </li>
+                <li class="ml-8">
+                    <a href="Gallery.php" class="font-bold text-sm text-grey-darker no-underline hover:text-black">Gallery</a>
+                </li>
+            </ul>
+
+            <div class="w-full md:w-auto flex justify-center">
+                <a href="index.html" class="block text-center text-black text-lg no-underline">
+                    <img src="assets/img/MF Logo.png" alt="MikesFiberglass Logo" class="w-32 h-auto" />
+                </a>
+            </div>
+            <ul class="flex-1 flex justify-center md:justify-end list-reset">
+                <li class="ml-8 hidden md:inline">
+                    <button class="modal-open bg-transparent border border-gray-500 hover:border-black-500 text-gray-500 hover:text-black-500 font-bold py-1 px-2">
+                        Contact Form
+                    </button>
+
+                    <!--Modal-->
+                    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+                        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+
+                        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+                            <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                    <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                </svg>
+                                <span class="text-sm">(Esc)</span>
+                            </div>
+
+                            <!-- Add margin if you want to see some of the overlay behind the modal-->
+                            <div class="modal-content py-4 text-left px-6">
+                                <!--Title-->
+                                <div class="flex justify-between text-center items-center pb-3">
+                                    <p class="text-2xl font-bold">
+                                        Complete your details below and we will get contact you.
+                                    </p>
+                                    <div class="modal-close cursor-pointer z-50">
+                                        <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <!--Body-->
+                                <div class="w-full p-6 pb-12 md:p-2 flex justify-center items-center relative">
+                                    <div class="table-auto w-full placeholder-blue-500">
+                                        <form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+                                            <input name="skip_WhereToSend" type="hidden" value="info@mikesfiberglass.co.za" />
+                                            <input name="skip_SnapHostID" type="hidden" value="TLYK44SBWDTJ" />
+                                            <input name="skip_WhereToReturn" type="hidden" value="https://www.mikesfiberglass.co.za/ThankYou.html" />
+                                            <input name="skip_Subject" type="hidden" value="Contact Us Form" />
+                                            <input name="skip_ShowUsersIp" type="hidden" value="1" />
+                                            <input name="skip_SendCopyToUser" type="hidden" value="0" />
+                                            <script type="text/javascript">
+                                            function ValidateForm(frm) {
+                                                if (frm.Name.value == "") {
+                                                    alert("Name is required.");
+                                                    frm.Name.focus();
+                                                    return false;
+                                                }
+                                                if (frm.FromEmailAddress.value == "") {
+                                                    alert("Email address is required.");
+                                                    frm.FromEmailAddress.focus();
+                                                    return false;
+                                                }
+                                                if (
+                                                    frm.FromEmailAddress.value.indexOf("@") < 1 ||
+                                                    frm.FromEmailAddress.value.indexOf(".") < 1
+                                                ) {
+                                                    alert("Please enter a valid email address.");
+                                                    frm.FromEmailAddress.focus();
+                                                    return false;
+                                                }
+                                                if (frm.Comments.value == "") {
+                                                    alert("Please enter comments or questions.");
+                                                    frm.Comments.focus();
+                                                    return false;
+                                                }
+                                                if (frm.skip_CaptchaCode.value == "") {
+                                                    alert("Enter web form code.");
+                                                    frm.skip_CaptchaCode.focus();
+                                                    return false;
+                                                }
+                                                return true;
+                                            }
+
+                                            function ReloadCaptchaImage(captchaImageId) {
+                                                var obj = document.getElementById(captchaImageId);
+                                                var src = "" + obj.src;
+                                                obj.src = "";
+                                                var date = new Date();
+                                                var pos = src.indexOf("&rad=");
+                                                if (pos >= 0) {
+                                                    src = src.substr(0, pos);
+                                                }
+                                                obj.src = src + "&rad=" + date.getTime();
+                                                return false;
+                                            }
+                                            </script>
+                                            <table class="table-auto border-black">
+                                                <tr>
+                                                    <td><b>Name*:</b></td>
+                                                    <td>
+                                                        <input name="Name" type="text" maxlength="60" class="bg-blue-100 border-black" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Phone number:</b></td>
+                                                    <td>
+                                                        <input name="PhoneNumber" type="text" maxlength="43" class="bg-blue-100 border-black" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Email address*:</b></td>
+                                                    <td>
+                                                        <input name="FromEmailAddress" type="text" maxlength="60" class="bg-blue-100 border-black" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Comments and questions*:</b></td>
+                                                    <td class="border-black border-solid">
+                                                        <textarea name="Comments" maxlength="300" rows="10" cols="auto" class="bg-blue-100 border-black"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-auto" colspan="2" align="center">
+                                                        <br />
+                                                        <table class="pb-2 border-black">
+                                                            <tr>
+                                                                <td colspan="2" style="padding-bottom: 18px"></td>
+                                                            </tr>
+
+                                                            <tr valign="top">
+                                                                <td>
+                                                                    <i>Enter Mikes Fiberglass CAPTCHA code*:</i>
+                                                                    <input name="skip_CaptchaCode" type="text" maxlength="6" class="bg-blue-100 border-black" />
+                                                                </td>
+                                                                <td>
+                                                                    <a href="https://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx">
+                                                                        <img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form" src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=TLYK44SBWDTJ&ImgType=2" class="bg-blue-100 border-black" />
+                                                                    </a>
+                                                                    <br />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <a href="#" onclick="return
+															ReloadCaptchaImage(
+															'CaptchaImage');"><span id="captcha">RELOAD CAPTCHA IMAGE</span></a>
+                                                        <br />
+                                                        <br /><br />
+                                                        * - required fields. &nbsp; &nbsp; &nbsp; &nbsp;
+                                                        &nbsp; &nbsp; &nbsp;
+                                                        <a href="#"><input name="skip_Submit" type="submit" value="Submit" class="rounded py-2 px-4 bg-blue-200" /></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!--Footer-->
+                                <div class="flex justify-center pt-2">
+                                    <button class="modal-close px-4 bg-gray-500 p-3 rounded-lg text-white hover:bg-black-400">
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    var openmodal = document.querySelectorAll(".modal-open");
+                    for (var i = 0; i < openmodal.length; i++) {
+                        openmodal[i].addEventListener("click", function(event) {
+                            event.preventDefault();
+                            toggleModal();
+                        });
+                    }
+
+                    const overlay = document.querySelector(".modal-overlay");
+                    overlay.addEventListener("click", toggleModal);
+
+                    var closemodal = document.querySelectorAll(".modal-close");
+                    for (var i = 0; i < closemodal.length; i++) {
+                        closemodal[i].addEventListener("click", toggleModal);
+                    }
+
+                    document.onkeydown = function(evt) {
+                        evt = evt || window.event;
+                        var isEscape = false;
+                        if ("key" in evt) {
+                            isEscape = evt.key === "Escape" || evt.key === "Esc";
+                        } else {
+                            isEscape = evt.keyCode === 27;
+                        }
+                        if (
+                            isEscape &&
+                            document.body.classList.contains("modal-active")
+                        ) {
+                            toggleModal();
+                        }
+                    };
+
+                    function toggleModal() {
+                        const body = document.querySelector("body");
+                        const modal = document.querySelector(".modal");
+                        modal.classList.toggle("opacity-0");
+                        modal.classList.toggle("pointer-events-none");
+                        body.classList.toggle("modal-active");
+                    }
+                    </script>
+                </li>
+            </ul>
+        </header>
+        <main>
+
+            <div class="w-full flex flex-wrap md:screen h-auto py-56">
+                <div class="flex justify-center text-center w-full h-auto pb-12">
+                    <h1 class="font-black text-5xl mb-4">Mikes Gallery</h1>
+                </div>
+                <div class="gallery">
+                    <?php
+								$dir = __DIR__ . DIRECTORY_SEPARATOR . "gallery" . DIRECTORY_SEPARATOR;
+								$images = glob($dir . "*.{jpg,jpeg,gif,png,bmp,webp}", GLOB_BRACE);
+							
+								foreach ($images as $i) {
+								printf("<img src='gallery/%s'/>", basename($i)); } ?>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="bg-black text-white text-center text-sm py-12">
+                <p>
+                    Copyright &copy; 2020
+                    <a class="text-blue-100" href="https://cb-ux.co.za">CB-UX </a>Responsive Development
+                </p>
+            </div>
+        </footer>
+    </body>
+
+</html>

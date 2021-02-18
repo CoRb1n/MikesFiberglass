@@ -1,13 +1,11 @@
 module.exports = {
-  purge: [
-    './mainWebsite/**/*.html',
-  ],
+  purge: ['./mainWebsite/**/*.html', './mainWebsite/**/*.php'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 }

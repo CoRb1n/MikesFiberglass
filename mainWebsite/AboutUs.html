@@ -1,101 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<link href="assets/css/tailwind.css" rel="stylesheet" />
-		<link
-			rel="shortcut icon"
-			href="assets/img/favicon2.png"
-			type="image/x-icon"
-		/>
+		<link rel="shortcut icon" href="assets/img/favicon2.png" type="image/x-icon" />
 
 		<title>About Mikes Fiberglass</title>
 	</head>
+
 	<body class="bg-green font-serif">
-		<header
-			class="flex flex-wrap items-center justify-between px-12 h-32 -mb-32 relative"
-		>
-			<ul
-				class="order-last md:order-first flex-1 flex justify-center md:justify-start list-reset"
-			>
+		<header class="flex flex-wrap items-center justify-between px-12 h-32 -mb-32 relative">
+			<ul class="order-last md:order-first flex-1 flex justify-center md:justify-start list-reset">
 				<li>
-					<a
-						href="index.html"
-						class="text-sm text-grey-darker no-underline hover:text-black"
-						>Home</a
-					>
+					<a href="index.html" class="text-sm text-grey-darker no-underline hover:text-black">Home</a>
 				</li>
 				<li class="ml-8">
-					<a
-						href="AboutUs.html"
-						class="text-sm font-bold text-grey-darker no-underline hover:text-black"
-						>About</a
-					>
+					<a href="AboutUs.html" class="text-sm font-bold text-grey-darker no-underline hover:text-black">About</a>
 				</li>
 				<li class="ml-8">
-					<a
-						href="ContactUs.html"
-						class="text-sm text-grey-darker no-underline hover:text-black"
-						>Contact</a
-					>
+					<a href="ContactUs.html" class="text-sm text-grey-darker no-underline hover:text-black">Contact</a>
 				</li>
 				<li class="ml-8">
-					<a
-						href="Gallery.html"
-						class="text-sm text-grey-darker no-underline hover:text-black"
-						>Gallery</a
-					>
+					<a href="Gallery.php" class="text-sm text-grey-darker no-underline hover:text-black">Gallery</a>
 				</li>
 			</ul>
 
 			<div class="w-full md:w-auto flex justify-center">
-				<a
-					href="index.html"
-					class="block text-center text-black text-lg no-underline"
-				>
-					<img
-						src="assets/img/MF Logo.png"
-						alt="MikesFiberglass Logo"
-						class="w-32 h-auto"
-					/>
+				<a href="index.html" class="block text-center text-black text-lg no-underline">
+					<img src="assets/img/MF Logo.png" alt="MikesFiberglass Logo" class="w-32 h-auto" />
 				</a>
 			</div>
 
 			<ul class="flex-1 flex justify-center md:justify-end list-reset">
 				<li class="ml-8 hidden md:inline">
-					<button
-						class="modal-open bg-transparent border border-gray-500 hover:border-black-500 text-gray-500 hover:text-black-500 font-bold py-1 px-2"
-					>
+					<button class="modal-open bg-transparent border border-gray-500 hover:border-black-500 text-gray-500 hover:text-black-500 font-bold py-1 px-2">
 						Contact Form
 					</button>
 
 					<!--Modal-->
-					<div
-						class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
-					>
-						<div
-							class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
-						></div>
+					<div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+						<div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
 
-						<div
-							class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
-						>
-							<div
-								class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"
-							>
-								<svg
-									class="fill-current text-white"
-									xmlns="http://www.w3.org/2000/svg"
-									width="18"
-									height="18"
-									viewBox="0 0 18 18"
-								>
-									<path
-										d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
-									></path>
+						<div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+							<div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+								<svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+									<path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
 								</svg>
 								<span class="text-sm">(Esc)</span>
 							</div>
@@ -108,58 +61,22 @@
 										Complete your details below and we will get contact you.
 									</p>
 									<div class="modal-close cursor-pointer z-50">
-										<svg
-											class="fill-current text-black"
-											xmlns="http://www.w3.org/2000/svg"
-											width="18"
-											height="18"
-											viewBox="0 0 18 18"
-										>
-											<path
-												d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
-											></path>
+										<svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+											<path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
 										</svg>
 									</div>
 								</div>
 
 								<!--Body-->
-								<div
-									class="w-full p-6 pb-12 md:p-2 flex justify-center items-center relative"
-								>
+								<div class="w-full p-6 pb-12 md:p-2 flex justify-center items-center relative">
 									<div class="table-auto w-full placeholder-blue-500">
-										<form
-											action="https://www.SnapHost.com/captcha/send.aspx"
-											id="ContactUsCaptchaWebForm"
-											method="post"
-											onsubmit="return ValidateForm(this);"
-											target="_top"
-										>
-											<input
-												name="skip_WhereToSend"
-												type="hidden"
-												value="info@mikesfiberglass.co.za"
-											/>
-											<input
-												name="skip_SnapHostID"
-												type="hidden"
-												value="TLYK44SBWDTJ"
-											/>
-											<input
-												name="skip_WhereToReturn"
-												type="hidden"
-												value="https://www.mikesfiberglass.co.za/ThankYou.html"
-											/>
-											<input
-												name="skip_Subject"
-												type="hidden"
-												value="Contact Us Form"
-											/>
+										<form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+											<input name="skip_WhereToSend" type="hidden" value="info@mikesfiberglass.co.za" />
+											<input name="skip_SnapHostID" type="hidden" value="TLYK44SBWDTJ" />
+											<input name="skip_WhereToReturn" type="hidden" value="https://www.mikesfiberglass.co.za/ThankYou.html" />
+											<input name="skip_Subject" type="hidden" value="Contact Us Form" />
 											<input name="skip_ShowUsersIp" type="hidden" value="1" />
-											<input
-												name="skip_SendCopyToUser"
-												type="hidden"
-												value="0"
-											/>
+											<input name="skip_SendCopyToUser" type="hidden" value="0" />
 											<script type="text/javascript">
 												function ValidateForm(frm) {
 													if (frm.Name.value == "") {
@@ -210,46 +127,25 @@
 												<tr>
 													<td><b>Name*:</b></td>
 													<td>
-														<input
-															name="Name"
-															type="text"
-															maxlength="60"
-															class="bg-blue-100 border-black"
-														/>
+														<input name="Name" type="text" maxlength="60" class="bg-blue-100 border-black" />
 													</td>
 												</tr>
 												<tr>
 													<td><b>Phone number:</b></td>
 													<td>
-														<input
-															name="PhoneNumber"
-															type="text"
-															maxlength="43"
-															class="bg-blue-100 border-black"
-														/>
+														<input name="PhoneNumber" type="text" maxlength="43" class="bg-blue-100 border-black" />
 													</td>
 												</tr>
 												<tr>
 													<td><b>Email address*:</b></td>
 													<td>
-														<input
-															name="FromEmailAddress"
-															type="text"
-															maxlength="60"
-															class="bg-blue-100 border-black"
-														/>
+														<input name="FromEmailAddress" type="text" maxlength="60" class="bg-blue-100 border-black" />
 													</td>
 												</tr>
 												<tr>
 													<td><b>Comments and questions*:</b></td>
 													<td class="border-black border-solid">
-														<textarea
-															name="Comments"
-															maxlength="300"
-															rows="10"
-															cols="auto"
-															class="bg-blue-100 border-black"
-														></textarea>
+														<textarea name="Comments" maxlength="300" rows="10" cols="auto" class="bg-blue-100 border-black"></textarea>
 													</td>
 												</tr>
 												<tr>
@@ -257,56 +153,30 @@
 														<br />
 														<table class="pb-2 border-black">
 															<tr>
-																<td
-																	colspan="2"
-																	style="padding-bottom: 18px"
-																></td>
+																<td colspan="2" style="padding-bottom: 18px"></td>
 															</tr>
 
 															<tr valign="top">
 																<td>
 																	<i>Enter Mikes Fiberglass CAPTCHA code*:</i>
-																	<input
-																		name="skip_CaptchaCode"
-																		type="text"
-																		maxlength="6"
-																		class="bg-blue-100 border-black"
-																	/>
+																	<input name="skip_CaptchaCode" type="text" maxlength="6" class="bg-blue-100 border-black" />
 																</td>
 																<td>
-																	<a
-																		href="https://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"
-																	>
-																		<img
-																			id="CaptchaImage"
-																			alt="Contact Us form"
-																			title="HTML code for Contact Us form"
-																			src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=TLYK44SBWDTJ&ImgType=2"
-																			class="bg-blue-100 border-black"
-																		/>
+																	<a href="https://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx">
+																		<img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form" src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=TLYK44SBWDTJ&ImgType=2" class="bg-blue-100 border-black" />
 																	</a>
 																	<br />
 																</td>
 															</tr>
 														</table>
-														<a
-															href="#"
-															onclick="return
+														<a href="#" onclick="return
                       ReloadCaptchaImage(
-                      'CaptchaImage');"
-															><span id="captcha">RELOAD CAPTCHA IMAGE</span></a
-														>
+                      'CaptchaImage');"><span id="captcha">RELOAD CAPTCHA IMAGE</span></a>
 														<br />
 														<br /><br />
 														* - required fields. &nbsp; &nbsp; &nbsp; &nbsp;
 														&nbsp; &nbsp; &nbsp;
-														<a href="#"
-															><input
-																name="skip_Submit"
-																type="submit"
-																value="Submit"
-																class="rounded py-2 px-4 bg-blue-200"
-														/></a>
+														<a href="#"><input name="skip_Submit" type="submit" value="Submit" class="rounded py-2 px-4 bg-blue-200" /></a>
 													</td>
 												</tr>
 											</table>
@@ -317,9 +187,7 @@
 
 								<!--Footer-->
 								<div class="flex justify-center pt-2">
-									<button
-										class="modal-close px-4 bg-gray-500 p-3 rounded-lg text-white hover:bg-black-400"
-									>
+									<button class="modal-close px-4 bg-gray-500 p-3 rounded-lg text-white hover:bg-black-400">
 										Close
 									</button>
 								</div>
@@ -372,27 +240,74 @@
 			</ul>
 		</header>
 
-		<div>
-			<div class="w-full flex flex-wrap md:h-screen pt-32">
-				<img
-					src="./assets/img/favicon.png"
-					class="w-full h-auto md:h-full object-cover"
-				/>
+		<main>
+			<div class="w-full h-full flex flex-wrap pt-32">
+				<div class="flex justify-center w-full h-full py-4">
+					<h3 class="text-5xl text-center from-black">About Mikes Fiberglass</h3>
+				</div>
+				<div class="grid md:grid-cols-2 grid-cols-1 px-2 lg:px-20 py-2 lg:py-20 place-items-center">
+					<div class="flex flex-col text-center md:text-left px-6">
+						<div>
+							<h3 class="font-black text-3xl md:text-5xl pb-6">Keeping it short...</h3>
+						</div>
+						<div>
+							<p class="leading-loose tracking-wide text-gray-700">
+								Mikes Fiberglass are specialists in the restoration, renovation
+								and resurfacing of existing swimming pools. Established over 30
+								years ago. We are highly experienced pool renovators and take
+								pride in the knowledge that we have the most experience in this
+								field on the KZN South Coast. We boast a sound track record and
+								solid reputation.
+								<br />
+								Contact Mikes Fiberglass today for the best quality resurfacing
+								and renovation of fibreglass pools that The KZN South Coast has
+								to offer.
+							</p>
+						</div>
+						<div class="h3 text-3xl text-black py-4">Not Limited To Pools</div>
+						<p class="leading-loose tracking-wide text-gray-700">
+							With being in the industry for so many years, we have not limited
+							ourselves to only swimming pools, anything that can be done with
+							fiberglass we have probably tried!
+						</p>
+						<br>
+						<ul class="list-disc list-inside leading-loose tracking-wide text-gray-700">
+							<li>Bakkie Linings</li>
+							<li>Flower Pots</li>
+							<li>Showers</li>
+							<li>Fabrication of car parts</li>
+							<li>Baths</li>
+							<li>Boat repairs</li>
+							<li>Anti corrosion finishes</li>
+							<li>Kyak repairs</li>
+							<li>Pool pump covers</li>
+						</ul>
+						<br>
+						<p class="leading-loose tracking-wide text-gray-700">If there is anything else you think we ccan assist with, get in touch and we will gladly assist.</p>
+						<div>
+							<p class="leading-loose tracking-wide text-gray-700">Sincerely</p>
+						</div>
+						<div>
+							<p class="leading-loose tracking-wide text-gray-700 font-bold">Mike Kretzinger</p>
+						</div>
+					</div>
+					<div class="grid grid-rows-3 gap-4 w-3/4 px-4">
+						<img class="h-80 w-full object-cover" src="gallery/File_012.jpeg" alt="boat fiberglass" />
+						<img class="h-80 w-full object-cover" src="gallery/File_010.jpeg" alt="bakkie lining" />
+						<img class="h-80 w-full object-cover" src="gallery/File_005.jpeg" alt="swimming pool" />
+					</div>
+				</div>
 			</div>
-			<div class="w-full relative text-center py-12 px-12 md:p-0">
-				<h1 class="text-center md:text-5xl mb-4">
-					Under Construction.............................
-				</h1>
-				<h2 class="text-2xl mb-4">...........</h2>
-				<p class="leading-loose tracking-wide text-gray-700"></p>
+		</main>
+
+		<footer>
+			<div class="bg-black text-white text-center text-sm py-12">
+				<p>
+					Copyright &copy; 2020
+					<a class="text-blue-100" href="https://cb-ux.co.za">CB-UX </a>Responsive Development
+				</p>
 			</div>
-		</div>
-		<div class="bg-black text-white text-center text-sm py-12">
-			<p>
-				Copyright &copy; 2020
-				<a class="text-blue-100" href="https://cb-ux.co.za">CB-UX </a>Responsive
-				Development
-			</p>
-		</div>
+		</footer>
 	</body>
+
 </html>
